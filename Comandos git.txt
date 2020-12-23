@@ -1,0 +1,55 @@
+git status (para ver estado)
+git add .
+git commit 
+git branch
+
+-------------------------
+PARA COMENZAR DESDE CERO
+ 
+Conviene ver que version de Git tenemos:
+git version 
+Eso te tira la version de Git
+
+Para configurar tu nombre y mail, hacemos:
+git config --global user.name "sramosSMN"
+git config --global user.email "sramos.smn@gmail.com"
+
+Listo. Si quiero ver si configure bien, voy a hacer:
+git config --list
+
+Bien. Entonces, para inicializar mi Repositorio (de la compu personal y estoy parada en esa carpeta)
+hago:
+git init
+
+Me dice que estoy en branch master
+
+Si quiero bajarme el repositorio del laburo/proyecto hago
+git clone link del repositorio (para copiar un repositorio de github) 
+Ahora tengo esa carpeta del laburo con las cositas que tiene adentro tmb
+
+-----------------------------
+
+Me muevo con cd a esa carpeta repositorio que baje del laburo
+
+Si quiero agregar un codigo o txt o imagen a esa carpeta, lo pongo ahi.
+Le doy a 
+git status
+Me va a decir que hay cosas ahi que no estan seguidos por git (esas imagenes/codigos/txt que agregue recien a mano)
+Entonces hago 
+git add .
+
+Esto los agrega y ya estan seguidos por git
+Si edito un txt de ahi, puedo ver los cambios por consola haciendo
+git diff
+
+Vuelvo a hacer
+git add . 
+Para que git siga el archivo con los nuevos cambios
+
+Ahora hago un commit (como paso previo antes de enviarlo a GitHub) y le puedo poner un mensaje
+git commit -m "Acá hicimos los cambios blablabla"
+
+Finalmente lo mando a GitHub con
+git push
+
+-------------------------------------------
