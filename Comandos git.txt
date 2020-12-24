@@ -104,3 +104,17 @@ git merge NuevaRama
 Todo esto sigue en mi compu, de manera local
 Tengo que subirlo al GitHub, en master:
 git push origin master
+
+--------------------------------------
+LIMPIAR BRANCHs
+Ya terminamos de trabajar en las branchs. Es una buena practica eliminarlas
+git push origin --delete NuevaRama
+
+Si hago 
+git branch -a
+Vemos que aún está el branch ahi, como q no se borró del todo. Aun lo tengo de manera local
+Entonces hago:
+git branch -d NuevaRama
+
+FIN(?)
+
