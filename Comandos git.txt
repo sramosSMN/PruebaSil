@@ -26,7 +26,7 @@ Ahora tengo esa carpeta del laburo con las cositas que tiene adentro tmb
 
 Me muevo con cd a esa carpeta repositorio que baje del laburo
 
-Si quiero agregar un codigo o txt o imagen a esa carpeta, lo pongo ahi.
+Si quiero agregar un codigo o un Hola.txt o imagen a esa carpeta, lo pongo ahi.
 Le doy a 
 git status
 Me va a decir que hay cosas ahi que no estan seguidos por git (esas imagenes/codigos/txt que agregue recien a mano)
