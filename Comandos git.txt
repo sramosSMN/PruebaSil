@@ -53,3 +53,34 @@ Finalmente lo mando a GitHub con
 git push
 
 -------------------------------------------
+Puedo crear una nueva rama (nuevo branch)
+git branch NuevaRama
+
+Ahora con esto puedo moverme a esa rama:
+git checkout NuevaRama
+
+Puedo verificarlo con 
+git status
+Ahi salta que ahora estoy parada en NuevaRama en lugar de master
+
+poniendo 
+ll
+me muestra la lista de archivos que tengo
+
+Puedo editar desde comando un archivo de texto con vim
+vim Hola.txt
+
+Se me abre una "ventanita" y para editar apreto i o Insert
+Para salir del modo edicion apreto Esc
+Para guardar los cambios hago :w
+Pasa salir de ahi :q
+
+Doy ahora
+git add . 
+Para poder seguir los cambios
+
+Puedo comentarlo
+git commit -m "Agregue nueva linea blablabla"
+
+Para enviarlo a github hago
+git push -u origin NuevaRama
