@@ -53,7 +53,7 @@ Finalmente lo mando a GitHub con
 git push
 
 -------------------------------------------
-Puedo crear una nueva rama (nuevo branch)
+CREAR UN NUEVO BRANCH
 git branch NuevaRama
 
 Ahora con esto puedo moverme a esa rama:
@@ -66,6 +66,9 @@ Ahi salta que ahora estoy parada en NuevaRama en lugar de master
 poniendo 
 ll
 me muestra la lista de archivos que tengo
+
+Para ver todas las branch que tengo, hago
+git branch -a
 
 Puedo editar desde comando un archivo de texto con vim
 vim Hola.txt
@@ -84,3 +87,20 @@ git commit -m "Agregue nueva linea blablabla"
 
 Para enviarlo a github hago
 git push -u origin NuevaRama
+
+--------------------------------
+SOBRE MERGE 
+Si ya terminé de trabajar en mi branch NuevaRama, puedo fusionarlo con master
+Me muevo al branch master
+git checkout master
+
+Voy a descargarme del github la ultima versión del master
+git pull origin master
+
+Ahora fusionamos, es decir, metemos los cambios realizados en el branch al master:
+git branch --merged
+git merge NuevaRama
+
+Todo esto sigue en mi compu, de manera local
+Tengo que subirlo al GitHub, en master:
+git push origin master
