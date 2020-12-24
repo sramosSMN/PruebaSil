@@ -111,5 +111,31 @@ Vemos que aún está el branch ahi, como q no se borró del todo. Aun lo tengo d
 Entonces hago:
 git branch -d NuevaRama
 
-FIN(?)
+-------------------------------------------
+BAJAR ARCHIVOS DE BRANCHs DE GITHUB
+Primero vemos la lista de branch que tenemos con
+git branch -a
 
+Nos paramos en la branch de nuestro interés con:
+git checkout -b nombreDelBranch origin/nombreDelBranch
+(segun Franco, no hace falta usar el -b. Probar y verificar)
+
+Bajamos la ultima version del branch
+git pull origin nombreDelBranch
+
+Para verificar en donde estamos parados:
+git status
+git branch
+Con ambos sirve.
+
+En nuestro repositorio local nos damos cuenta que solo tenemos los archivos del branch.
+Si queremos volver a trabajar con los archivos del main, hacemos
+git checkout main
+Con eso vemos que tenemos los archivos del main en nuestra compu
+
+----------------------------------------------
+COMENTARIOS DE FEDE
+No usar pull, pues pull = fetch + merge
+Esto puede romper todo
+
+FIN(?)
