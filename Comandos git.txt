@@ -27,11 +27,20 @@ Ahora tengo esa carpeta del laburo con las cositas que tiene adentro tmb
 Me muevo con cd a esa carpeta repositorio que baje del laburo
 
 Si quiero agregar un codigo o un Hola.txt o imagen a esa carpeta, lo pongo ahi.
+
+Puedo crear un archivo de texto ahi mismo usando
+touch Bitacora.txt
+
 Le doy a 
 git status
 Me va a decir que hay cosas ahi que no estan seguidos por git (esas imagenes/codigos/txt que agregue recien a mano)
 Entonces hago 
-git add .
+git add .  <-- agrega todo
+O puedo agregar cosas especificas
+git add archivo.txt
+o 
+git add carpeta/ <-- agrega la carpeta y su contenido
+
 
 Esto los agrega y ya estan seguidos por git
 Si edito un txt de ahi, puedo ver los cambios por consola haciendo
@@ -58,9 +67,15 @@ Puedo verificarlo con
 git status
 Ahi salta que ahora estoy parada en NuevaRama en lugar de master
 
-poniendo 
+Tambien puedo chequear con 
+git log
+
+
+Para ver la lista de archivos que tengo, pongo
 ll
-me muestra la lista de archivos que tengo
+
+Puedo crear un directorio (carpeta) con
+mkdir NombredeCarpetaNueva
 
 Para ver todas las branch que tengo, hago
 git branch -a
@@ -81,7 +96,7 @@ Puedo comentarlo
 git commit -m "Agregue nueva linea blablabla"
 
 Para enviarlo a github hago
-git push -u origin NuevaRama
+git push origin NuevaRama
 
 --------------------------------
 SOBRE MERGE 
